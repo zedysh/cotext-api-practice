@@ -2,6 +2,12 @@ import React, { PureComponent } from "react";
 
 const AuthContext = React.createContext();
 
+// for third method of using context in class components
+// not necessary for Child1 and Child2 examples
+export const AuthConsumer = AuthContext.Consumer;
+// ---------------------------------------------
+
+
 export class AuthProvider extends PureComponent {
   state = { name: "", isAuthenticated: false };
 
